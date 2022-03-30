@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: #fafafa;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

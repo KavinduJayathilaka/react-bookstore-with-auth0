@@ -1,0 +1,88 @@
+header {
+  background-color: #fafafa;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.BrowseCategory {
+  background-color: #fafafa;
+  height: inherit;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BrowseCategory select {
+  background-color: #fafafa;
+  color: #90a4ae;
+  border: 0;
+  outline: 0px;
+}
+.BrowseCategory option {
+  background-color: #fafafa;
+  color: #90a4ae;
+  border: 0;
+}
+.SearchBook {
+  background-color: #fafafa;
+  font-size: 16px;
+  height: inherit;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.iconSearch {
+  margin: 5px;
+  color: #b0bec5;
+}
+.SearchBook input {
+  background-color: inherit;
+  color: #90a4ae;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 0.5px solid #b0bec5;
+  flex: 2;
+  width: 50%;
+  font-size: 16px;
+  margin-right: 10px;
+  -webkit-transition: margin 0.4s ease-in-out;
+  transition: margin 0.4s ease-in-out;
+}
+.SearchBook input:focus {
+  margin-right: 3px;
+}
+.SearchBook input::-webkit-input-placeholder {
+  color: #b0bec5;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+.SearchBook input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.Titel {
+  background-color: #fafafa;
+  height: inherit;
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #78909c;
+}
+.cart a {
+  color: #7b807e;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.cart ul li {
+  display: inline-block;
+  padding: 20px 50px;
+  opacity: 10;
+}
+.cart ul li :hover {
+  opacity: 1;
+}
