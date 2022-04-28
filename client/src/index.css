@@ -8,3 +8,7 @@ body {
 /*------------------------Header-------------------*/
 
 @import url("./components/1header/headerStyle.css");
+
+/*------------------------Auth-------------------*/
+
+@import url("./components/3main/auth/auth.css");

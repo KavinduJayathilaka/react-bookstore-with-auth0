@@ -6,8 +6,9 @@ class Titel extends Component {
   render() {
     return (
       <div className="Titel">
-        <Link to={"/test"}>Test LInk</Link>
-        Book<b>Shelter</b>
+        <Link to={"/"}>
+          Book<b>Shelter</b>
+        </Link>
       </div>
     );
   }
