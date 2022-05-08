@@ -14,6 +14,10 @@ import EditUser from "../3main/profile/EditUser";
 import SearchResults from "../3main/search/SearchResults";
 
 import { useSelector } from "react-redux";
+import AddBookHeader from "./addBooks/AddBookHeader";
+import AddBookForm from "./addBooks/AddBookForm";
+import AddBookHome from "./addBooks/AddBookHome";
+import Books from "./addBooks/Book/Books";
 
 function Main() {
   const auth = useSelector((state) => state.auth);
@@ -24,6 +28,11 @@ function Main() {
         <Route path="/" component={Home} exact />
 
         <Route path="/searchResults" component={SearchResults} exact />
+
+        <Route path="/addProducts" component={AddBookHeader} exact />
+        <Route path="/add" component={AddBookForm} exact />
+        <Route path="/addBookHome" component={AddBookHome} exact />
+        <Route path="/books" component={Books} exact />
 
         <Route path="/login" component={isLogged ? NotFound : Login} exact />
         <Route

@@ -5,6 +5,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
 const path = require("path");
+const router = require("./routes/book-routes");
 
 const app = express();
 app.use(express.json());
@@ -17,8 +18,9 @@ app.use(
 );
 
 // Routes
+app.use(express.json());
 app.use("/user", require("./routes/userRouter"));
-
+app.use("/books", router); // localhost:5000/books
 // Connect to mongodb
 const URI = process.env.MONGODB_URL;
 mongoose.connect(

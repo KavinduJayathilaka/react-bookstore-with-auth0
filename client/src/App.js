@@ -11,7 +11,12 @@ import {
 import Header from "./components/1header/Header";
 import Carousel from "./components/2carousel/Carousel";
 import Main from "./components/3main/Main";
+
 import axios from "axios";
+
+import Footer from "rc-footer";
+import "rc-footer/assets/index.css"; // import 'rc-footer/asssets/index.less';
+import { render } from "react-dom";
 
 function App() {
   const dispatch = useDispatch();
@@ -47,6 +52,21 @@ function App() {
       <Header></Header>
       <Carousel></Carousel>
       <Main></Main>
+
+      <Footer
+        columns={[
+          {
+            icon: (
+              <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />
+            ),
+            title: "BookShelter",
+            url: "https://yuque.com",
+            description: "All Rights Reserved",
+            openExternal: true,
+          },
+        ]}
+        bottom="Designed By Team CodeX"
+      />
     </div>
   );
 }

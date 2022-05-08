@@ -49,6 +49,13 @@ function Menu() {
       <ul style={transForm}>
         <li>
           {" "}
+          <Link to={"/addProducts"}>
+            <i className="fas fa-plus"></i>
+            Add Product
+          </Link>
+        </li>
+        <li>
+          {" "}
           <Link to={"/"}>
             <i className="fas fa-shopping-cart"></i>
             cart
