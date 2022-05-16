@@ -1,6 +1,6 @@
 header {
   background-color: #fafafa;
-  height: 10vh;
+  height: 11vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -95,7 +95,7 @@ header {
 
 /* --------- Dropdown ---------- */
 .drop-nav {
-  position: relative;
+  position: float;
   padding: 10px 0;
 }
 .drop-nav a {

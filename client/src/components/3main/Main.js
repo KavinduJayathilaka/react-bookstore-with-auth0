@@ -18,14 +18,14 @@ import AddBookHeader from "./addBooks/AddBookHeader";
 import AddBookForm from "./addBooks/AddBookForm";
 import AddBookHome from "./addBooks/AddBookHome";
 import Books from "./addBooks/Book/Books";
-
+import Products from "../4mainPages/products/Products";
 function Main() {
   const auth = useSelector((state) => state.auth);
   const { isLogged, isAdmin } = auth;
   return (
     <section>
       <Switch>
-        <Route path="/" component={Home} exact />
+        <Route path="/" component={Products} exact />
 
         <Route path="/searchResults" component={SearchResults} exact />
 

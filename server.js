@@ -21,6 +21,11 @@ app.use(
 app.use(express.json());
 app.use("/user", require("./routes/userRouter"));
 app.use("/books", router); // localhost:5000/books
+app.use("/api", require("./routes/categoryRouter"));
+app.use("/api", require("./routes/upload"));
+app.use("/api", require("./routes/productRouter"));
+app.use("/api", require("./routes/uploadPhotos"));
+
 // Connect to mongodb
 const URI = process.env.MONGODB_URL;
 mongoose.connect(

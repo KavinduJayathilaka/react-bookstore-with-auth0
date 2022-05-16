@@ -54,13 +54,7 @@ function Menu() {
             Add Product
           </Link>
         </li>
-        <li>
-          {" "}
-          <Link to={"/"}>
-            <i className="fas fa-shopping-cart"></i>
-            cart
-          </Link>
-        </li>
+
         {isLogged ? (
           userLink()
         ) : (

@@ -9,14 +9,17 @@ import {
 } from "./redux/actions/authAction";
 
 import Header from "./components/1header/Header";
+import SubHeader from "./components/1.5subHeader/Header";
 import Carousel from "./components/2carousel/Carousel";
 import Main from "./components/3main/Main";
+import MainPages from "./components/4mainPages/Pages";
 
 import axios from "axios";
 
 import Footer from "rc-footer";
 import "rc-footer/assets/index.css"; // import 'rc-footer/asssets/index.less';
 import { render } from "react-dom";
+import { DataProvider } from "./GlobalState";
 
 function App() {
   const dispatch = useDispatch();
@@ -48,26 +51,32 @@ function App() {
   }, [token, dispatch]);
 
   return (
-    <div>
-      <Header></Header>
-      <Carousel></Carousel>
-      <Main></Main>
+    <DataProvider>
+      <Router>
+        <div>
+          <Header></Header>
+          <SubHeader></SubHeader>
+          <Carousel></Carousel>
+          <MainPages></MainPages>
+          <Main></Main>
 
-      <Footer
-        columns={[
-          {
-            icon: (
-              <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />
-            ),
-            title: "BookShelter",
-            url: "https://yuque.com",
-            description: "All Rights Reserved",
-            openExternal: true,
-          },
-        ]}
-        bottom="Designed By Team CodeX"
-      />
-    </div>
+          <Footer
+            columns={[
+              {
+                icon: (
+                  <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />
+                ),
+                title: "BookShelter",
+                url: "https://yuque.com",
+                description: "All Rights Reserved",
+                openExternal: true,
+              },
+            ]}
+            bottom="Designed By Team CodeX"
+          />
+        </div>
+      </Router>
+    </DataProvider>
   );
 }
 
